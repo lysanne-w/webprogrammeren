@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Mijn site</title>
+		<script type="text/javascript">
+
+		function plus(){
+
+			var g1 = document.getElementById("getal1").value;
+			var g2 = document.getElementById("getal2").value;
+			//var boodschap = "Ola " + voornaam + " " + achternaam;
+			//alert("Howdy" + " "+ voornaam + " " + achternaam);
+
+			if(g1 == ""){
+				document.getElementById("uitkomst").innerHTML = "voer getal 1 in";
+			} else {			
+				if(g2 == ""){
+					document.getElementById("uitkomst").innerHTML = "voer getal 2 in";
+				} else {
+				var som = parseInt(g1) + parseInt(g2);
+				document.getElementById("uitkomst").innerHTML = som;
+				}
+			}
+
+			//document.getElementById("boodschap").innerHTML = boodschap;
+		}
+
+		</script>	
+	</head>
+	<body>
+		<input type="tekst" id="getal1" value=""/><br/>
+		<input type="tekst" id="getal2" value=""/><br/>
+
+		<button onclick="plus()">Hallo</button>
+		<p id="uitkomst">...</p>
+	</body>
+</html>
