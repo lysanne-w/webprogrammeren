@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+
+			function berekenBMI(){
+
+				var gewicht = parseInt(prompt("Hoeveel weegt in u in kg?"));
+				var lengte = parseFloat(prompt("Hoe groot bent u in m?"));
+
+				alert(gewicht / (lengte * lengte));
+
+				if((gewicht / (lengte * lengte)) > 25){
+
+					alert("overgewicht");
+				}
+				else {
+					alert("normaal gewicht");
+				}
+
+			}
+		
+		</script>
+	</head>
+	<body>
+		<button onclick="berekenBMI()"> Bereken BMI </button>
+	</body>
+</html>
